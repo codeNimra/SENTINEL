@@ -1,0 +1,17 @@
+{
+  "id": "P-DEMO-001",
+  "title": "Database connection pool exhaustion on checkout service",
+  "status": "OPEN",
+  "severity": "CRITICAL",
+  "affectedEntities": [
+    {
+      "entityId": "SERVICE-CHECKOUT",
+      "name": "checkout-api",
+      "entityType": "SERVICE"
+    }
+  ],
+  "impactLevel": "P1",
+  "startTime": 1686488400000,
+  "logExcerpt": "Connection pool exhaustion: All 100 connections in use. Rejecting new connections.",
+  "rootCause": "Connection leak in v3.2.1 eager-loading implementation"
+}
